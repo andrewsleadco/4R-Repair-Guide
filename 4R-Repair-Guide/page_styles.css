@@ -1,4 +1,80 @@
-@page {
-  margin-bottom: 5pt;
-  margin-top: 5pt;
+
+/* Base reset */
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background: #fefefe;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* General spacing for all Calibre classes */
+[class^="calibre"] {
+  margin-bottom: 1em;
+}
+
+/* Headings (calibre3 tends to be headings in Calibre exports) */
+.calibre3, h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* Subtitle / smaller headings */
+.calibre2 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+}
+
+/* Paragraph body */
+.calibre1 {
+  font-size: 1em;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+table td, table th {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+  background: #fff;
+}
+
+/* Code blocks (if any) */
+pre, code {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* Links */
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
